@@ -1,0 +1,12 @@
+@media print {
+  .print-hide,
+  .site-header,
+  .post-thumbnail {
+    display: none;
+  }
+
+
+  h1 {
+    display: initial !important;
+  }
+}

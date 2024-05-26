@@ -1,0 +1,136 @@
+.recipe {
+  &-archive {
+    &__title {
+      margin-bottom: 1em;
+    }
+
+    &__filters {
+      margin-bottom: 2em;
+    }
+
+    &__card {
+      @include cardshadow();
+      background: #fff;
+      padding: 0;
+      margin-right: .5rem;
+      margin-left: .5rem;
+      &-title {
+        bottom: 0;
+        width: 100%;
+        font-size: 2.2em;
+        margin-bottom: 0;
+        padding: 0 .3em;
+        text-align: left;
+        &--container {
+          width: 100%;
+          height: calc(100% - .5em);
+          bottom: 0;
+          margin-bottom: .5em;
+          background-color: #6666664a;
+        }
+        
+        & > a {
+          color: #fff;
+        }
+      }
+      &--content {
+        padding: 0 .5em;
+      }
+    }
+  }
+
+  &--content {
+    margin-top: 3em;
+  }
+  &--sidebar {
+
+  }
+
+  &--hassidebar {
+    padding-right: 3em;
+  }
+
+  &__note {
+    &--card {
+      background: $background-note;
+      border-radius: 3px;
+      margin-bottom: 2em;
+      @include cardshadow();
+      &-inner {
+        padding: 1.5em;
+      }
+    }
+  }
+
+  &__ingredients {
+    &--card {
+      background: white;
+      border-radius: 3px;
+      margin-bottom: 1em;
+      @include cardshadow();
+      &-container {
+        position: relative;
+      }
+      &-inner {
+        padding: 1.5em;
+      }
+    }
+
+    &-toggleprice {
+      padding: 1em;
+      border-radius: 100%;
+      line-height: .5em;
+      background: $color-grey;
+      color: #fff;
+    }
+  }
+
+  &__instructions {
+    &--inner {
+      position: relative;
+      &-line {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background: $color-grey;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+      }
+    }
+    &--card {
+      background: white;
+      border-radius: 3px;
+      margin-bottom: 2em;
+      @include cardshadow();
+      &-container {
+        position: relative;
+      }
+      &-inner {
+        padding: 1.5em;
+      }
+      &-duration {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 3.5em;
+      }
+      &-time {
+        display: inline-block;
+        background: white;
+        border-radius: 50%;
+        padding: 1em;
+        line-height: 1em;
+        @include cardshadow;
+      }
+    }
+  }
+
+  &__video {
+    & > iframe {
+      width: 100%;
+      height: 450px;
+    }
+  }
+}

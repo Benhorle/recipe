@@ -1,0 +1,6 @@
+@mixin cardshadow() {
+  -webkit-box-shadow: 0 4px 23px 2px $color-shadow;
+  -moz-box-shadow: 0 4px 23px 2px $color-shadow;
+  box-shadow: 0 4px 23px 2px $color-shadow;
+}
+/* @include cardshadow(); */

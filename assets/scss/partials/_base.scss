@@ -1,0 +1,26 @@
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.p {
+  &x-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.d-none {
+  display: none;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.right {
+  float: right;
+}
